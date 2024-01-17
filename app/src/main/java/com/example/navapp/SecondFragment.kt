@@ -7,22 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.example.navapp.databinding.FragmentHomeBinding
+import com.example.navapp.databinding.FragmentSecondBinding
 
-class HomeFragment : Fragment() {
+class SecondFragment : Fragment() {
 
-    private lateinit var binding : FragmentHomeBinding
+    private lateinit var binding : FragmentSecondBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         // Inflate the layout for this fragment
-
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
-
+        binding  = DataBindingUtil.inflate(inflater, R.layout.fragment_second, container, false)
         return binding.root
-
     }
+
 
 }
